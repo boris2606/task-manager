@@ -8,15 +8,28 @@
         <!-- <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> тут іконка вкладки -->
     </head>
     <body>
-        <main class="wrapper_tm">
-            <div class="block_with_ts">
-                <input class="ts_tit" type="text" placeholder="Введіть назву завдання">
-                <input class="ts_sec" type="text" placeholder="Введіть опис завдання">
-                <button class="confirm_ts"> Створити завдання</button>
+        <main class="wrapper_auth">
+            <div class="register_form">
+                <p>Реєстрація</p>
+                <input type="text" placeholder="Введіть логін" class="reg_login">
+                <input type="text" placeholder="Введіть вік" class="reg_age">
+                <input type="text" placeholder="Введіть пароль" class="reg_pass">
+                <input type="text" placeholder="Повторіть пароль" class="reg_confirm_pass">
+                <div class="button_wrapper">
+                    <button class="register_btn">Зареєструватись</button>
+                    <button class="autorization_btn">Авторизуватись</button>
+                </div>
             </div>
-            <div class="block_with_comp_ts">
-                <p class="tit_text_comp_ts"> Список необхідних завдань</p>
-
+            <div class="autorization_form">
+                <p>Якщо у вас немає профіля, то необхідно зареєструватись</p>
+                <input type="text" placeholder="Введіть логін" class="autentification_login">
+                <input type="text" placeholder="Введіть пароль" class="autentification_pass">
+                <div class="button_wrapper">
+                    <button class="enter_btn">Вхід</button>
+                    <button class="go_register">Перейти до реєстрації</button>
+                </div>
+                <p class="alert_txt"></p>
+                <p class="confirmed_person"></p>
             </div>
         </main>
     </body>
